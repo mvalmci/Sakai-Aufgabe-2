@@ -5,7 +5,7 @@
 - Use Case 1.05 (Laktatmessung eingeben)
   
 ### Beschreibung
-- Während der Patient den Leistungstest durchführt, entnimmt der Versuchsleiter, zu versch. Zeitpunkten, Blutproben aus dem Ohr des Patienten und bestimmt den Laktatgehalt dieser Blutproben.
+- Während der Patient den Leistungstest durchführt, entnimmt der Versuchsleiter, zu versch. Zeitpunkten, Blutproben aus dem Ohr des Patienten und bestimmt den Laktatgehalt dieser Blutproben und trägt Sie ins System ein
 
 ### Beteiligte Akteure
 - Patient
@@ -22,41 +22,31 @@
 - Ein Leistungstest für den Pateienten wurde gestartet und der Patient befindet sich im Test
   
 ### Invarianten
--
+- Aufzeichnung der bis zum Abbruch erhobenen Daten
 
 ### Nachbedingungen/Ergebnis
-- Die eingegebenen Laktatmesswerte sind im System gespeichert und können zur Auswertung genutzt werden.
+- Die eingegebenen Laktatmesswerte sind im System gespeichert und können zur Auswertung genutzt werden
 
 ### Standartablauf
--
+1. Der Versuchsleiter wählt im System den Leistungstest aus, für den die Laktatmessung eingetragen werden soll
+2. Der Versuchsleiter navigiert zur Benutzeroberfläche für Laktatmessungen
+3. Der Versuchsleiter gibt die gemessenen Laktatwerte und Zeitpunkt der Messung ein
+4. Der Versuchsleiter speichert die Eingabe
+5. Das System bestätigt die Speicherung der Laktatmesswerte
 
 ### Alternative Ablaufschritte
--
+- Falsche Eingabe von Messwerten
+  1. Versuchsleiter gibt falschen Wert (z.B. String anstatt von Float)
+  2. System gibt eine Fehlermeldung zurück
+  3. System fordert den Versuchsleiter auf einen korrekten Wert einzugeben
+  4. Der Versuchsleiter gibt erneut einen richtigen Wert ein
+  5. Er speichert die Eingabe
+  6. Das System bestätigt die Speicherung der Laktatmesswerte
 
 ### Hinweise
--
+- KEINE
 
 ### Änderungsgeschichte
-
-
-
-
-
-
-## Normaler Ablauf
-1. Der Benutzer wählt im System den Patienten aus, für den die Laktatmessung eingetragen werden soll.
-2. Der Benutzer navigiert zur Eingabemaske für Laktatmessungen.
-3. Der Benutzer gibt die gemessenen Laktatwerte sowie das Datum und die Uhrzeit der Messung ein.
-4. Der Benutzer speichert die Eingabe.
-5. Das System bestätigt die erfolgreiche Speicherung der Laktatmessung.
-
-## Alternativer Ablauf
-### A1: Fehlerhafte Eingabe der Laktatwerte
-1. Der Benutzer gibt fehlerhafte oder unvollständige Laktatwerte ein.
-2. Das System zeigt eine Fehlermeldung an und fordert den Benutzer zur Korrektur der Eingabe auf.
-3. Der Benutzer korrigiert die Eingabe und speichert erneut.
-
-## Erweiterungen
-### E1: Eingabe zusätzlicher Informationen
-1. Der Benutzer gibt zusätzliche Informationen zur Laktatmessung ein, z.B. Messmethode oder besondere Beobachtungen.
-2. Diese Informationen werden zusammen mit den Laktatwerten gespeichert und sind für die spätere Auswertung verfügbar.
+- Version 1
+- Name des Autors: Marius Valenta
+- Datum: 14.03.2025
