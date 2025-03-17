@@ -36,12 +36,12 @@
 
 ### Alternative Ablaufschritte
 - Falsche Eingabe von Messwerten
-  1. Versuchsleiter gibt falschen Wert (z.B. String anstatt von Float)
-  2. System gibt eine Fehlermeldung zurück
-  3. System fordert den Versuchsleiter auf einen korrekten Wert einzugeben
-  4. Der Versuchsleiter gibt erneut einen richtigen Wert ein
-  5. Er speichert die Eingabe
-  6. Das System bestätigt die Speicherung der Laktatmesswerte
+1. Versuchsleiter gibt falschen Wert (z.B. String anstatt von Float)
+2. System gibt eine Fehlermeldung zurück
+3. System fordert den Versuchsleiter auf einen korrekten Wert einzugeben
+4. Der Versuchsleiter gibt erneut einen richtigen Wert ein
+5. Er speichert die Eingabe
+6. Das System bestätigt die Speicherung der Laktatmesswerte
 
 ### Hinweise
 - KEINE
