@@ -18,7 +18,7 @@
 - Um eine möglichst genaue Aussage zur optimalen Trainingsherzfrequenz geben zu können, muss mindestens ein weiterer Parameter erfasst werden. Dazu bietet sich der Laktatwert, der auch in Kreisen der Spitzensportler als der genauste Anhaltspunkt dient, an. Laktat ist ein Stoffwechselendprodukt, das bei muskulärer Arbeit entsteht. Je intensiver der Organismus belastet wird, desto mehr Laktat fällt im Blut an. Wenn bestimmte Laktatschwellenwerte in der Muskulatur und damit auch im Blut überschritten werden, ist der Organismus nicht mehr in der Lage, das entstehende Laktat abzubauen. In Folge dessen kommt es zu einer Übersäuerung der Muskulatur, welche vom Körper für eine kurze Zeitspanne kompensiert und toleriert wird. Letztendlich führt dies jedoch zu einem Abfall der Leistungsfähigkeit und damit verbunden zu einem Abbruch der Belastung.
 
 ### Vorbedingungen
-- Der Patient ist im System angelegt.
+- Der Patient ist im System angelegt
 - Ein Leistungstest für den Pateienten wurde gestartet und der Patient befindet sich im Test
   
 ### Invarianten
