@@ -8,19 +8,20 @@ if __name__ == "__main__":
         experiment_name=input("Bitte geben Sie dem Experiment einen Namen: "),
         date=datetime.today().strftime("%Y-%m-%d"),
         supervisor=input("Bitte geben Sie den Namen des Versuchsleiters ein: "),
-        subject="Leistungstest"
+        subject="max_hr_test"
     )
-    age1 = int(input("Bitte geben Sie das Alter des Patienten ein: "))
+    age_general = int(input("Bitte geben Sie das Alter des Patienten ein: "))
+    sex_general = input("Bitte geben Sie das Geschlecht des Patienten ein! (male/female): ")
     patient = build_person(
         first_name=input("Wie lautet der Vorname des Patienten?: "),
         last_name=input("Wie lautet der Nachname des Patienten?: "),
-        sex=input("Geschlecht? (male/female): "),
-        age=age1
+        sex=sex_general,
+        age=age_general
     )
     
     herzfrequenz = estimate_max_hr(
-        sex = input("Bitte geben Sie das Geschlecht des Patienten ein um eine geschätzte maximale HR berechnen zu können: "),
-        age_years= age1
+        sex = sex_general,
+        age_years= age_general
     )
    
 #nun wird eine neue Funktion erstellt, welche die beiden dictionarys zu einem zusammenfügt
