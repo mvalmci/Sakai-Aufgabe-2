@@ -2,6 +2,8 @@ from my_functions import build_experiment
 from my_functions import build_person
 from my_functions import estimate_max_hr
 from datetime import datetime
+import pandas as pd
+
 
 if __name__ == "__main__":
     experiment = build_experiment(
@@ -33,4 +35,9 @@ if __name__ == "__main__":
                 }
        return dict_ganz
     
-    print(dict_komplett(patient,experiment))
+    dict_ganz = dict_komplett(patient,experiment)
+
+    df = pd.DataFrame(dict_ganz)
+
+    # Tabelle ausgeben
+    print(df)
