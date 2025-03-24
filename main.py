@@ -38,6 +38,6 @@ if __name__ == "__main__":
     dict_ganz = dict_komplett(patient,experiment)
 
     df = pd.DataFrame(dict_ganz)
-
-    # Tabelle ausgeben
+    
+    print("\n")
     print(df)
